@@ -7,44 +7,45 @@
 </head>
 <body>
     <header>
+    <!-- header는 sectioning elements, 따라서 heading을 반드시 적어야 함 -->
         <h1>
-            <a href="">
-                <img src="" alt="Twitter">
+            <a href="#">
+                <img src="#" alt="Twitter">
             </a>
         </h1>
         <nav>
             <h1>Golbal Navigation Menu</h1>
             <ul>
-                <a href="#">
+                <li>
                     <strong>Current page</strong>
                     <!-- icon -->
-                    <li>Home</li>
-                </a>
-                <a href="#">
+                    <a href="#">Home</a>
+                </li>
+                <li>
                     <!-- icon -->
-                    <li>Explore</li>
-                </a>
-                <a href="#">
+                    <a href="#">Explore</a>
+                </li>
+                <li>
                     <strong aria-label="5 Unread notifications">5</strong>
                     <!-- icon -->
-                    <li>Notifications</li>
-                </a>
-                <a href="#">
+                    <a href="#">Notifications</a>
+                </li>
+                <li>
                     <!-- icon -->
-                    <li>Messages</li>
-                </a>
-                <a href="#">
+                    <a href="#">Messages</a>
+                </li>
+                <li>
                     <!-- icon -->
-                    <li>Bookmarks</li>
-                </a>
-                <a href="#">
+                    <a href="#">Bookmarks</a>
+                </li>
+                <li>
                     <!-- icon -->
-                    <li>List</li>
-                </a>
-                <a href="#">
+                    <a href="#">List</a>
+                </li>
+                <li>
                     <!-- image -->
-                    <li>Profile</li>
-                </a>
+                    <a href="#">Profile</a>
+                </li>
                 <li>
                 <!-- icon -->
                     <button type="button">More</button>
@@ -52,11 +53,11 @@
                     <!-- dropdown menu -->
                     <div class="dropdown">
                         <button type="button">
-                            <img src="" alt="Kimbug">
+                            <img src="#" alt="Kimbug">
                         </button>
 
                         <button type="button">
-                            <img src="" alt="plus button">
+                            <img src="#" alt="plus button">
                         </button>
 
                         <Strong>Kimbug</Strong>
@@ -104,5 +105,66 @@
             <button type="button">Tweet</button>
         </nav>
     </header>
+
+    <main>
+    <!-- main은 sectioning elements가 아니기 때문에 heading을 반드시 적어줄 필요가 없음 -->
+        <header>
+            <h1>home</h1>
+            <button type="button" aria-label="Timeline option">
+                <!-- icon -->
+            </button>
+            <div>
+                <h2>Home shows you top Tweets first</h2>
+                <button type="button">
+                    <!-- icon -->
+                    <strong>
+                        See latest Tweets instead
+                    </strong>
+                    <span>
+                        You'll be switched back Home after you've been away for a while.
+                    </span>
+                </button>
+                <a href="#">
+                    <!-- icon -->
+                    View content preferences
+                </a>
+            </div>
+        </header>
+
+        <!-- tweet form -->
+        <section>
+        <!-- section은 sectioning elements이기 때문에 heading이 필수, 논리적으로 완결된 상태를 묶어 줌 -->
+            <h1>Write a tweet</h1>
+
+            <form action="#" method="post">
+                <img src="#" alt="@Kimbugx">
+                <textarea placeholder="What's happening" maxlength="280"></textarea>
+
+                <!-- input태그에 스타일 작업을 하기 위해서 button태그를 따로 만들어 버튼을 눌렀을 때 input이 작동하도록 js로직을 짜야 함-->
+                <button type="button" aria-label="Upload files">
+                    <img src="#" alt="picture icon">
+                </button>
+                <input type="file" multiple accept="image/*, video/*">
+                <button type="button" aria-label="Search GIfs...">
+                    <img src="#" alt="GIF icon">
+                </button>
+                <button type="button" aria-label="Create a poll">
+                    <img src="#" alt="poll icon">
+                </button>
+                <button type="button" aria-label="Choose emoji">
+                    <img src="#" alt="smile icon">
+                </button>
+
+                <!-- 글자 수를 체크하는 아이콘 부분 -->
+                <!-- js로 '0'을 바꿔야 함 -->
+                <strong aria-label="0 out of 280 characters"></strong>
+
+                <button type="button" aria-label="Add another tweet">
+                    <img src="#" alt="smile icon">
+                </button>
+                <button type="submit">Tweet</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
