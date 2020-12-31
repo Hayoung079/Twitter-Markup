@@ -1,6 +1,4 @@
-# Tweet
-
-## Twitter page markup practice
+# Twitter Markup Practice
 
 ### Reference Image
 
